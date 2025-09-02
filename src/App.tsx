@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Volume2, VolumeX } from 'lucide-react';
+import { Volume2, VolumeX, X } from 'lucide-react';
 import './App.css';
 
 function App() {
@@ -233,6 +233,17 @@ function App() {
         >
           {isAudioPlaying ? <Volume2 size={16} /> : <VolumeX size={16} />}
         </button>
+
+        {/* X/Twitter Button */}
+        <a
+          href="https://x.com/bearbackrooms"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="x-control"
+          title="Follow Bear Backrooms on X"
+        >
+          <X size={16} />
+        </a>
 
         {/* Subtle Status Indicator */}
         <div className={`absolute bottom-8 left-8 text-xs font-mono opacity-40 transition-all duration-2000 ${isLoaded ? 'opacity-40' : 'opacity-0'}`}>

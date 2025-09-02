@@ -377,6 +377,30 @@
   transform: scale(1.05);
 }
 
+/* X/Twitter Control Button */
+.x-control {
+  position: fixed;
+  top: 20px;
+  right: 70px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.x-control:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  color: white;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .bear-title {
@@ -436,6 +460,12 @@
   .audio-control {
     top: 15px;
     right: 15px;
+    padding: 10px;
+  }
+  
+  .x-control {
+    top: 15px;
+    right: 60px;
     padding: 10px;
   }
 }
